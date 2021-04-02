@@ -1,0 +1,833 @@
+/* Default css Start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+
+.wraper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Default css End */
+/* Menu Css */
+
+.menu-section {
+    background-color: #ec116d;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.main-menu-logo {
+    width: 7%;
+}
+
+.main-menu-text {}
+
+.main-menu-text ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.main-menu-text ul li {}
+
+.main-menu-text ul li a {
+    color: white;
+    font-weight: 700;
+    padding: 0 19px;
+    font-size: 15px;
+    line-height: 35px;
+    transition: ease-in-out .5s;
+}
+
+.main-menu-text ul li:hover>a {
+    color: yellow;
+}
+
+.main-menu-text ul li a span {
+    margin-left: 2px;
+    font-size: 13px;
+}
+
+.main-menu-text ul li.active a {
+    color: yellow !important;
+}
+
+
+/* Dropdown */
+.main-menu-text ul li {
+    position: relative;
+}
+
+.main-menu-text ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #cc085a;
+    height: auto;
+    width: 217px;
+    transition: ease-in-out .5s;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.main-menu-text ul li:hover>ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+.main-menu-text ul li ul li {
+    position: relative;
+}
+
+.main-menu-text ul li ul li ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.main-menu-text ul li ul li a {
+    display: block;
+}
+
+.main-menu-text ul li ul li a span {
+    margin-left: 5px;
+}
+
+
+/* Menu CSS End */
+
+
+/* Banner CSS Start */
+
+.banner-section {
+    background-image: url(./image/ia_100000040.jpg);
+    background-repeat: no-repeat;
+    background-position: 10% 0;
+    background-size: cover;
+    padding: 20px 0;
+    background-attachment: fixed;
+
+}
+
+.banner-content {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-center {
+    color: white;
+}
+
+.banner-center img {}
+
+.banner-center h1 {
+    font-size: 60px;
+    margin: 15px 0;
+}
+
+.banner-center p {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 17px;
+    position: relative;
+}
+
+.banner-center p::after {
+    content: "";
+    height: 1px;
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.609);
+    position: absolute;
+    right: 30px;
+    top: 7px;
+}
+
+.banner-center p::before {
+    content: "";
+    height: 1px;
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.609);
+    position: absolute;
+    left: 30px;
+    top: 7px;
+}
+
+.btn {
+    border: 1px solid #fff;
+    padding: 17px 25px;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    transition: ease-in-out .5s;
+}
+
+.btn:hover {
+    background-color: #f4c93f;
+    color: #ec116d;
+    border-color: #f4c93f;
+}
+
+/* Banner CSS Start */
+
+
+/* About CSS Start */
+.about-section {
+    padding: 100px 0;
+    background-color: #fefeff;
+}
+
+.about-item {
+    display: flex;
+    box-shadow: 10px 10px 30px #eceef5;
+    align-items: center;
+}
+
+.about-image {
+    width: 40%;
+    background-color: #eaedf4;
+}
+
+.about-content {
+    width: 60%;
+    padding: 10px 54px;
+}
+
+.about-content h4 {
+    display: inline-block;
+    background: #fcc747;
+    padding: 10px 20px;
+    font-size: 21px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 5px;
+}
+
+.about-content h4::after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 26px 0 16px 19px;
+    border-color: transparent transparent transparent #fcc647;
+    position: absolute;
+    top: 13px;
+    left: 0;
+    z-index: -1;
+}
+
+.about-content h3 {
+    margin: 20px 0;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.about-content p {
+    color: #838494;
+    font-size: 17px;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+
+.about-content .about-me {
+    display: flex;
+}
+
+.about-content .about-me .about-name-left {
+    width: 30%;
+}
+
+.about-content .about-me .about-name-left ul {}
+
+.about-content .about-me .about-name-left ul li {
+    line-height: 2.2em;
+    color: #6b435d;
+}
+
+.about-content .about-me .about-name-right {
+    width: 70%;
+}
+
+.about-content .about-me .about-name-right ul li {
+    line-height: 2.2em;
+    color: #6b435d;
+}
+
+.about-btn.btn {
+    background-color: #3243e3;
+    padding: 18px 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 29px;
+    transition: ease-in-out .5s;
+    border: none;
+}
+
+.about-btn.btn:hover {
+    background-color: #ec116d;
+    color: #fff;
+}
+
+/* About CSS End */
+
+/* Portfolio CSS Start */
+.portfolio-section {
+    padding: 100px 0;
+}
+
+.main-heading {}
+
+.main-heading h3 {
+    display: inline-block;
+    background-color: #fcc747;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 26px;
+}
+
+.main-heading h1 {
+    font-size: 38px;
+    width: 70%;
+    color: #292828;
+    line-height: 1.4em;
+}
+
+.portfolio-menu {}
+
+.portfolio-menu ul {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.portfolio-menu ul li {}
+
+.portfolio-menu ul li a {
+    padding-right: 30px;
+    color: #717085;
+    font-size: 13px;
+    transition: ease-in-out .5s;
+}
+
+.portfolio-menu ul li a:hover {
+    color: #0074e8;
+}
+
+.portfolio-menu ul li.delect a {
+    color: #0074e8;
+    position: relative;
+}
+
+.portfolio-menu ul li.delect a::after {
+    content: "";
+    height: 1px;
+    width: 58%;
+    background-color: #0074e8;
+    position: absolute;
+    top: 8px;
+    left: -5px;
+}
+
+.portfolio-image {}
+
+.portfolio-image ul {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portfolio-image ul li {
+    max-width: 32%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.portfolio-image ul li img {}
+
+.portfolio-image ul li::after {
+    content: "";
+    height: 99%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.74);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: ease-in-out .5s;
+}
+
+.portfolio-image ul li:hover::after {
+    opacity: 1;
+}
+
+.portfolio-name {
+    position: absolute;
+    top: 40%;
+    left: 28%;
+    z-index: 11;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: ease-in-out .5s;
+}
+
+.portfolio-image ul li:hover .portfolio-name {
+    opacity: 1;
+}
+
+.portfolio-name a {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background: #fcc747;
+    border-radius: 50%;
+    line-height: 40px;
+    color: black;
+}
+
+.portfolio-name span i {}
+
+.portfolio-name h4 {
+    margin-top: 30px;
+    font-size: 21px;
+    margin-bottom: 14px;
+}
+
+.portfolio-name p {}
+
+/* Portfolio CSS End */
+
+/* Skills Section Start */
+.skills-section {
+    padding-bottom: 100px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.skills .skills-item {
+    display: flex;
+    width: 32%;
+    margin-bottom: 30px;
+    padding: 30px;
+    box-shadow: 0px 0px 50px #dbdbdbb0;
+    transition: ease-in-out .5s;
+}
+
+.skills .skills-item .skills-icon {
+    width: 20%;
+}
+
+.skills .skills-item .skills-icon img {
+    width: 40px;
+}
+
+.skills .skills-item .skills-content {
+    width: 80%;
+}
+
+.skills .skills-item .skills-content h3 {}
+
+.skills .skills-item .skills-content p {
+    margin-top: 25px;
+    line-height: 1.6em;
+    font-size: 15px;
+}
+
+.skills-item:nth-child(1):hover {
+    background-color: #b4f0e134;
+}
+
+.skills-item:nth-child(2):hover {
+    background-color: #727eec33;
+}
+
+.skills-item:nth-child(3):hover {
+    background-color: #f03e8831;
+}
+
+.skills-item:nth-child(4):hover {
+    background-color: #fed0522c;
+}
+
+.skills-item:nth-child(5):hover {
+    background-color: #ee106c31;
+}
+
+.skills-item:nth-child(6):hover {
+    background-color: #34d7ae2c;
+}
+
+/* Skills Section End */
+
+
+/* Counter Section Css Start */
+.counter-section {
+    background-image: url(.//image/ia_100000041.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.counter-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 83px 0;
+    text-align: center;
+    color: white;
+}
+
+.counter-content .counter-item {}
+
+.counter-content .counter-item h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.counter-content .counter-item p {}
+
+/* Counter Section Css End */
+
+/* Education Section CSS Start */
+.education-section {
+    padding-top: 100px;
+}
+
+.education {
+    display: flex;
+}
+
+.education .education-items {
+    margin-top: 60px;
+    width: 60%;
+}
+
+.education .education-items .education-text {
+    display: flex;
+    padding: 25px;
+    box-shadow: 0px 0px 45px #e7e9f2;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.education .education-items .education-text .education-text-left {
+    width: 35%;
+}
+
+.education .education-items .education-text .education-text-left span {
+    padding: 4px 7px;
+    background-color: #ec116c;
+    margin-bottom: 14px;
+    display: inline-block;
+    color: white;
+    font-size: 13px;
+}
+
+.education .education-items .education-text .education-text-left h5 {
+    font-size: 18px;
+    line-height: 1.6em;
+    margin-bottom: 14px;
+}
+
+.education .education-items .education-text .education-text-left p {
+    font-size: 14px;
+    color: #877398;
+}
+
+.education .education-items .education-text .education-text-right {
+    width: 60%;
+    margin-left: 5%;
+}
+
+.education .education-items .education-text .education-text-right p {
+    line-height: 1.9em;
+    color: #877398;
+}
+
+.education-image {
+    width: 40%;
+    padding: 0 20px;
+}
+
+/* Education Section CSS End */
+
+/* employment-section CSS Start */
+.employment-section {
+    padding: 100px 0;
+    background-color: #f0f4fd;
+}
+
+.employment {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.employment .employment-item {
+    width: 32%;
+    padding: 30px;
+    background-color: white;
+}
+
+.employment .employment-item img {
+    display: block;
+    width: 110px;
+    margin-bottom: 20px;
+}
+
+.employment .employment-item span {
+    display: inline-block;
+    background: #ec116c;
+    padding: 3px 7px;
+    font-size: 14px;
+    color: white;
+}
+
+.employment .employment-item h4 {
+    display: inline-block;
+    margin-left: 19px;
+    color: #1d1f33;
+}
+
+.employment .employment-item p {
+    margin-top: 22px;
+    font-size: 15px;
+    color: #877398;
+}
+
+/* employment-section CSS End */
+
+
+/* Trophy Sectiom CSS Start */
+.torphy-section {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.trophy {}
+
+.trophy img {
+    margin-bottom: 45px;
+}
+
+.trophy ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.trophy ul li {
+    padding: 10px 35px;
+}
+
+.trophy ul li a {}
+
+.trophy ul li a img {
+    margin-bottom: 0;
+    opacity: .3;
+    transition: ease-in-out .5s;
+}
+
+.trophy ul li a img:hover {
+    opacity: 1;
+}
+
+/* Trophy Sectiom CSS End */
+
+/* Contact Srction CSS Start */
+.contact-section {
+    padding: 50px 0px;
+}
+
+.contact-body {
+    margin-top: 60px;
+    padding: 30px;
+    box-shadow: 0px 0px 75px #d6d7e7;
+}
+
+.contact-body .contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+
+.contact-body .contact .contact-item {
+    width: 32%;
+    text-align: center;
+    padding: 0 50px;
+    color: #6c6e85;
+    font-weight: 700;
+    line-height: 1.8em;
+}
+
+.contact-body .contact .contact-item span {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    line-height: 60px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contact-item:nth-child(1) span {
+
+    border: 1px solid #52d8bb;
+    color: #52d8bb;
+}
+
+.contact-item:nth-child(2) span {
+    color: #3243e3;
+    border: 1px solid #3243e3;
+}
+
+.contact-item:nth-child(3) span {
+    color: #ec116c;
+    border: 1px solid #ec116c;
+}
+
+
+.contact-body .contact .contact-item a {
+    display: block;
+    color: #6c6e85;
+    font-weight: 700;
+    line-height: 1.8em;
+}
+
+.contact-body .contact-form {
+    display: flex;
+}
+
+.contact-body form {
+    text-align: center;
+}
+
+.contact-body .contact-form .form-left {
+    width: 50%;
+    margin-right: 35px;
+}
+
+.contact-body .contact-form .form-left input {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+    border: 1px solid #00000036;
+}
+
+.contact-body .contact-form .form-left input[type="number"] {}
+
+.contact-body .contact-form .form-right {
+    width: 50%;
+    margin-left: 0px;
+}
+
+.contact-body .contact-form .form-right textarea {
+    width: 100%;
+    height: 89%;
+    padding: 5px 30px;
+    border: 1px solid #00000036;
+}
+
+.form-btn {
+    padding: 20px 55px !important;
+}
+
+/* Contact Srction CSS End */
+
+
+/* Footer Css Start */
+.footer-section {
+    padding: 50px 0;
+}
+
+.footer-top {}
+
+.footer-top ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.footer-top ul li {}
+
+.footer-top ul li a {
+    margin: 0 20px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #6c6e85;
+    color: #6c6e85;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: ease-in-out .5s;
+}
+
+.footer-top ul li a:hover {
+    background-color: #3243e3;
+    color: white;
+}
+
+.footer-bottom {}
+
+.footer-bottom p {}
+
+.footer-bottom p a {
+    color: #fdca70;
+}
+
+/* Footer Css End */
