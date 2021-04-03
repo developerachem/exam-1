@@ -725,7 +725,6 @@ ol {
 .contact-body .contact .contact-item {
     width: 32%;
     text-align: center;
-    /*! padding: 0 50px; */
     color: #6c6e85;
     font-weight: 700;
     line-height: 1.8em;
@@ -745,16 +744,31 @@ ol {
 
     border: 1px solid #52d8bb;
     color: #52d8bb;
+    transition:  ease-in-out .5s;
+}
+
+.contact-item:nth-child(1) span:hover{
+    color: white;
+    background-color: #52d8bb;
 }
 
 .contact-item:nth-child(2) span {
     color: #3243e3;
     border: 1px solid #3243e3;
+    transition: ease-in-out .5s;
 }
-
+.contact-item:nth-child(2) span:hover{
+    background-color: #3243e3;
+    color: white;
+}
 .contact-item:nth-child(3) span {
     color: #ec116c;
     border: 1px solid #ec116c;
+    transition: ease-in-out .5s;
+}
+.contact-item:nth-child(3) span:hover{
+    background-color: #ec116c;
+    color: white;
 }
 
 
