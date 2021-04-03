@@ -725,7 +725,7 @@ ol {
 .contact-body .contact .contact-item {
     width: 32%;
     text-align: center;
-    padding: 0 50px;
+    /*! padding: 0 50px; */
     color: #6c6e85;
     font-weight: 700;
     line-height: 1.8em;
