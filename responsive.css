@@ -167,7 +167,7 @@
     .main-menu-text input[type="checkbox"]::before {
         content: '\f0c9';
         font-family: "Font Awesome 5 Free";
-        font-weight: 900;
+        font-weight: 600;
         font-size: 38px;
         position: absolute;
         top: 0;
@@ -300,8 +300,6 @@
     .skills .skills-item {
         padding: 20px;
     }
-
-
 }
 
 /* @media all and (max-width: 850px) end */
@@ -320,6 +318,19 @@
     }
     .employment .employment-item {
         width: 44%;
+    }
+    .contact-body .contact .contact-item span {
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .contact-body .contact .contact-item a {
+        font-size: 13px;
+    }
+    .contact-body .contact .contact-item {
+        font-size: 13px;
     }
 }
 /* @media all and (max-width: 805px) end */
@@ -412,6 +423,19 @@
     .employment .employment-item {
         width: 95%;
     }
+    .contact-body .contact-form {
+        display: inherit;
+    }
+    .contact-body .contact-form .form-left {
+        width: 100%;
+        margin-right: 0;
+    }
+    .contact-body .contact-form .form-right {
+        width: 100%;
+    }
+    .contact-body .contact-form .form-right textarea {
+        height: 150px;
+    }
 
 
 }
@@ -432,12 +456,26 @@
     .counter-content {
         flex-wrap: wrap;
     }
+    .contact-body .contact {
+        display: inline;
+        padding: 0 0;
+    }
     .counter-content .counter-item {
         width: 47%;
         padding: 3%;
         border: 1px solid #b60e54a8;
         margin: 7px;
     }
+    .contact-body .contact {
+        padding: 0 0;
+    }
+    .contact-body .contact .contact-item {
+        width: 100%;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #6060602b;
+        padding-bottom: 30px;
+    }
+
 }
 
 /* @media all and (max-width: 640px) end */
@@ -455,6 +493,20 @@
     .trophy ul li:hover {
         border: 1px solid black;
         border-radius: 50px 0;
+    }
+    .main-menu-text input[type="checkbox"]::after {
+        font-weight: 600;
+    }
+    .main-menu-text input[type="checkbox"]::before {
+        font-weight: 600;
+    }
+    .footer-top ul li a {
+        margin: 0 11px;
+        height: 45px;
+        width: 45px;
+        line-height: 45px;
+        font-size: 17px;
+        
     }
 }
 /* @media all and (max-width: 619px) end */
@@ -581,6 +633,10 @@
     .skills .skills-item .skills-icon img {
         width: 55px;
     }
+    .main-menu-text ul li ul li ul {
+        left: 44%;
+        top: 100%;
+    }
 }
 
 /* @media all and (max-width:550px) end */
@@ -653,7 +709,7 @@
     }
 
     .banner-content {
-        height: 30vh;
+        height: 45vh;
     }
 
     .banner-center {
@@ -678,7 +734,7 @@
     }
 
     .main-menu-text ul {
-        height: 35vh;
+        height: 50vh;
         z-index: 1111;
     }
 
@@ -723,7 +779,24 @@
         top: 15px;
         left: 8px;
     }
-
+    .portfolio-section {
+        padding-bottom: 25px;
+    }
+    .skills-section {
+        padding-bottom: 45px;
+    }
+    .education-section {
+        padding-top: 50px;
+    }
+    .employment-section {
+        padding: 50px 0;
+    }
+    .torphy-section {
+        padding: 20px 0;
+    }
+    .contact-section {
+        padding: 0;
+    }
 
 
 }
@@ -810,6 +883,22 @@
         margin: auto;
         margin-bottom: 20px;
     }
+    .main-heading {
+        text-align: center;
+    }
+    .footer-top ul li a {
+        margin: 0 9px;
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        font-size: 15px;
+    }
+    .footer-top ul {
+        margin-bottom: 31px;
+    }
+    .footer-bottom p {
+        font-size: 13px;
+    }
 
 /* @media all and (max-width:406px) end */
 
@@ -843,6 +932,22 @@
     .employment .employment-item p {
         margin-top: 18px;
         font-size: 14px;
+    }
+    .main-menu-text input[type="checkbox"]::after {
+        font-size: 30px;
+    }
+    .main-menu-text input[type="checkbox"]::before {
+        font-size: 30px;
+    }
+    .contact-body .contact-form .form-left input {
+        padding: 15px 20px;
+    }
+    .contact-body .contact-form .form-right textarea {
+        height: 110px;
+    }
+    .form-btn {
+        padding: 15px 30px !important;
+        font-size: 11px !important;
     }
 }
 
@@ -900,6 +1005,7 @@
     .portfolio-name h4 {
         font-size: 22px;
     }
+    
 }
 
 /* @media all and (max-width: 300px) end */
