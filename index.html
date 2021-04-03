@@ -4,12 +4,13 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Exam 1 by Achem</title>
+        <title>Exam 1 by Achem</title> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css">
     </head>
     <body>
         <!-- Menu Section Start -->
@@ -20,14 +21,17 @@
                         <a href="#"><img src=".//image/lfwf-white-logo-removebg-preview.png" alt=""></a>
                     </div>
                     <div class="main-menu-text">
+                        <input type="checkbox">
                         <ul>
                             <li class="active"><a href="#">Home</a></li>
                             <li><a href="#">ABOUT ME</a></li>
                             <li><a href="#">PORTFOLIO</a></li>
-                            <li><a href="#">SKILLS <span><i class="fas fa-chevron-down"></i></span></a>
+                            <li  class="click"><a href="#">SKILLS <span><i class="fas fa-chevron-down"></i></span></a>
+                                <input type="checkbox">
                                 <ul>
                                     <li><a href="#">SUB MENU ITEM 1</a></li>
                                     <li><a href="#">SUB MENU ITEM 2 <span><i class="fas fa-chevron-right"></i></span></a>
+                                        <input type="checkbox">
                                         <ul>
                                             <li><a href="#">LAVEL 1</a></li>
                                             <li><a href="#">LAVEL 2</a></li>
@@ -68,7 +72,7 @@
         <section class="about-section">
             <div class="wraper">
                 <div class="about-item">
-                    <div class="about-image">
+                    <div class="about-image text-center">
                         <img src=".//image/ia_100000000042.png" alt="">
                     </div>
                     <div class="about-content">
@@ -386,7 +390,7 @@
                             <div class="form-left">
                                 <input type="text" placeholder="Name" name="" id="">
                                 <input type="mail" placeholder="Email" name="" id="">
-                                <input type="number" placeholder="Phone" name="" id="">
+                                <input type="tel" placeholder="Phone" name="" id="">
                             </div>
                             <div class="form-right">
                                 <textarea name="" placeholder="Massage" id="" ></textarea>
