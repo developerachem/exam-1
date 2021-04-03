@@ -748,8 +748,8 @@ ol {
 }
 
 .contact-item:nth-child(1) span:hover{
-    color: white ;
-    background-color: #52d8bb;
+    color: white !important;
+    background-color: #52d8bb !important;
 }
 
 .contact-item:nth-child(2) span {
@@ -758,8 +758,8 @@ ol {
     transition: ease-in-out .5s;
 }
 .contact-item:nth-child(2) span:hover{
-    background-color: #3243e3;
-    color: white;
+    background-color: #3243e3 !important;
+    color: white !important;
 }
 .contact-item:nth-child(3) span {
     color: #ec116c;
@@ -767,8 +767,8 @@ ol {
     transition: ease-in-out .5s;
 }
 .contact-item:nth-child(3) span:hover{
-    background-color: #ec116c;
-    color: white;
+    background-color: #ec116c !important;
+    color: white !important;
 }
 
 
