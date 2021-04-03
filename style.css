@@ -748,7 +748,7 @@ ol {
 }
 
 .contact-item:nth-child(1) span:hover{
-    color: white;
+    color: white ;
     background-color: #52d8bb;
 }
 
