@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 img {
@@ -39,7 +40,7 @@ ol {
 .wraper {
     max-width: 1200px;
     margin: auto;
-    padding: 0 20px;
+    padding: 0 20px !important;
 }
 
 /* Default css End */
@@ -53,6 +54,7 @@ ol {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
+    height: 61px;
 }
 
 .main-menu-logo {
@@ -60,6 +62,10 @@ ol {
 }
 
 .main-menu-text {}
+
+.main-menu-text input[type="checkbox"] {
+    display: none;
+}
 
 .main-menu-text ul {
     display: flex;
@@ -120,10 +126,15 @@ ol {
     position: relative;
 }
 
+.main-menu-text ul li input[type="checkbox"] {
+    display: none;
+}
+
 .main-menu-text ul li ul li ul {
     position: absolute;
     top: 0;
     left: 100%;
+    height: 140px;
 }
 
 .main-menu-text ul li ul li a {
@@ -143,7 +154,7 @@ ol {
 .banner-section {
     background-image: url(./image/ia_100000040.jpg);
     background-repeat: no-repeat;
-    background-position: 10% 0;
+    background-position: center 10%;
     background-size: cover;
     padding: 20px 0;
     background-attachment: fixed;
@@ -205,9 +216,9 @@ ol {
 }
 
 .btn:hover {
-    background-color: #f4c93f;
-    color: #ec116d;
-    border-color: #f4c93f;
+    background-color: #ec116d;
+    color: white;
+    border-color: wheat;
 }
 
 /* Banner CSS Start */
@@ -222,7 +233,7 @@ ol {
 .about-item {
     display: flex;
     box-shadow: 10px 10px 30px #eceef5;
-    align-items: center;
+    /*! align-items: center; */
 }
 
 .about-image {
@@ -232,7 +243,7 @@ ol {
 
 .about-content {
     width: 60%;
-    padding: 10px 54px;
+    padding: 30px 55px;
 }
 
 .about-content h4 {
@@ -305,6 +316,7 @@ ol {
     margin-top: 29px;
     transition: ease-in-out .5s;
     border: none;
+    cursor: pointer;
 }
 
 .about-btn.btn:hover {
@@ -316,7 +328,8 @@ ol {
 
 /* Portfolio CSS Start */
 .portfolio-section {
-    padding: 100px 0;
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 
 .main-heading {}
@@ -343,6 +356,7 @@ ol {
     display: flex;
     margin-top: 50px;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .portfolio-menu ul li {}
@@ -547,6 +561,7 @@ ol {
 
 .education {
     display: flex;
+    align-items: center;
 }
 
 .education .education-items {
@@ -619,6 +634,7 @@ ol {
     width: 32%;
     padding: 30px;
     background-color: white;
+    box-shadow: 0px 0px 20px #a79e9e2e;
 }
 
 .employment .employment-item img {
@@ -677,12 +693,14 @@ ol {
 
 .trophy ul li a img {
     margin-bottom: 0;
-    opacity: .3;
+    opacity: .5;
     transition: ease-in-out .5s;
+    filter: saturate(0);
 }
 
 .trophy ul li a img:hover {
     opacity: 1;
+    filter: saturate(1);
 }
 
 /* Trophy Sectiom CSS End */
